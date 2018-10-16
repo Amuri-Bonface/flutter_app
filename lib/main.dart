@@ -19,7 +19,11 @@ class MyApp extends StatelessWidget{
         body: Center(
          // child: Text(wordPair.asPascalCase),
           child: RandomWords(),
+
         ),
+        floatingActionButton: new FloatingActionButton(
+          onPressed: null,
+          child: new Icon(Icons.add),),
       ),
     );
   }
