@@ -10,5 +10,20 @@ class RandomWordState extends State<RandomWords>
   Widget build(BuildContext context) {
     final wordPair=WordPair.random();
     return Text(wordPair.asPascalCase);
+
+    final _suggestiions=<WordPair>[];
+    final _biggerFont = const TextStyle(fontSize: 18.0);
+    Widget _buildSuggestions()
+    {
+      return ListView.builder(
+    padding: const EdgeInsets.all(16.0),
+
+    itemBuilder: (context,i){
+        if (i.isOdd) return Divider();
+        final index=i~/2;
+
+
+      };
+    }
   }
 }
