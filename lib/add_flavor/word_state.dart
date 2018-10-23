@@ -23,7 +23,7 @@ class RandomWordState extends State<RandomWords>
         final index=i~/2;
 
 
-      };
-    }
-  }
+      });
+    
+  }}
 }
